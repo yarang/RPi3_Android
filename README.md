@@ -53,4 +53,14 @@ $ ./install.sh -p /dev/sdX
 ```
 + Replace **X** with proper device number.
 
-Community forum: https://groups.google.com/forum/#!forum/android-rpi
+
+
+#### Community forum:
++ https://groups.google.com/forum/#!forum/android-rpi
+
+
+
+#### Thanks to:
++ [peyo-hd](https://github.com/peyo-hd)
++ [RTAndroid](https://github.com/RTAndroid)
++ [kconger](https://github.com/kconger)
