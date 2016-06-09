@@ -52,3 +52,5 @@ Create SD card
 $ ./install.sh -p /dev/sdX
 ```
 + Replace **X** with proper device number.
+
+Community forum: https://groups.google.com/forum/#!forum/android-rpi
