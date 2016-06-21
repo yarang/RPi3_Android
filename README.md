@@ -32,20 +32,6 @@ $ make -jX
 
 
 
-Build kernel
-------------
-```
-$ cd kernel/rpi3
-$ export ARCH=arm
-$ export CROSS_COMPILE=arm-linux-gnueabihf-
-$ scripts/kconfig/merge_config.sh arch/arm/configs/bcm2709_defconfig android/configs/android-base.cfg android/configs/android-recommended.cfg
-$ make -jX zImage
-$ make -jX dtbs
-```
-+ Replace -j**X** with number of core/cpu * 2
-
-
-
 Create SD card
 --------------
 ```
