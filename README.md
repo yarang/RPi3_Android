@@ -1,7 +1,7 @@
 Prerequisites
 -------------
 ```
-$ sudo apt-get install gcc-arm-linux-gnueabihf python-mako
+$ sudo apt-get install gcc-arm-linux-gnueabihf python-mako f2fs-tools
 ```
 
 
