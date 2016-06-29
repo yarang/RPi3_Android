@@ -38,6 +38,7 @@ Create SD card
 $ ./install.sh -p /dev/sdX
 ```
 + Replace **X** with proper device number.
++ **For better performances uses a class 10 MicroSD card.**
 
 
 
