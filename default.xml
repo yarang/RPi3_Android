@@ -459,5 +459,4 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/google/gapps" name="android_vendor_google_gapps" revision="android-6.0" remote="ARPi3" />
 </manifest>
