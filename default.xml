@@ -59,6 +59,7 @@
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/busybox" name="android_external_busybox" revision="android-6.0" remote="ARPi3" />
+  <!-- Command set for android -->
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/cblas" name="platform/external/cblas" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs,pdk-fs" />
@@ -76,8 +77,8 @@
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/donuts" name="platform/external/donuts" groups="pdk-fs" />
-  <project path="external/drm_gralloc" name="external_drm_gralloc" revision="vc4_master" remote="peyo" />
-  <project path="external/drm_hwcomposer" name="external_drm_hwcomposer" revision="vc4_master" remote="peyo" />
+  <project path="external/drm_gralloc" name="external_drm_gralloc" revision="vc4_master" remote="peyo" /><!-- Need by mesa3d, hwcomposer -->
+  <project path="external/drm_hwcomposer" name="external_drm_hwcomposer" revision="vc4_master" remote="peyo" /><!--  -->
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" />
@@ -174,7 +175,7 @@
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
-  <project path="external/mesa3d" name="android_external_mesa3d" revision="android-6.0" remote="ARPi3" />
+  <project path="external/mesa3d" name="android_external_mesa3d" revision="android-6.0" remote="ARPi3" /> <!-- Graphic library -->
   <project path="external/messageformat" name="platform/external/messageformat" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
   <project path="external/mockftpserver" name="platform/external/mockftpserver" groups="pdk-fs" />
@@ -188,14 +189,19 @@
   <project path="external/netcat" name="platform/external/netcat" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/netperf" name="platform/external/netperf" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/neven" name="platform/external/neven" groups="pdk-cw-fs,pdk-fs" />
+  <!-- face detector -->
   <project path="external/nfacct" name="platform/external/nfacct" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/nist-pkits" name="platform/external/nist-pkits" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/nist-sip" name="platform/external/nist-sip" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/nist-sip" name="platform/external/nist-sip" groups="pdk-cw-fs,pdk-fs" /> 
+  <!-- SIP library. (Can not need.) -->
   <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" />
   <project path="external/oauth" name="platform/external/oauth" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/objenesis" name="platform/external/objenesis" groups="pdk-cw-fs,pdk-fs" />
+  <!-- Objenesis is a small Java library that serves one purpose:
+          To instantiate a new object of a particular class. -->
   <project path="external/okhttp" name="platform/external/okhttp" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/opencv" name="platform/external/opencv" groups="pdk-cw-fs,pdk-fs" />
+  <!-- OpenFst is a library for constructing, combining, optimizing, and searching weighted finite-state transducers (FSTs). -->
   <project path="external/openfst" name="platform/external/openfst" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/openssh" name="platform/external/openssh" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/owasp/sanitizer" name="platform/external/owasp/sanitizer" groups="pdk-fs" />
@@ -208,6 +214,7 @@
   <project path="external/regex-re2" name="platform/external/regex-re2" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/replicaisland" name="platform/external/replicaisland" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/robolectric" name="platform/external/robolectric" groups="pdk-cw-fs,pdk-fs" />
+  <!-- Android Testing framework -->
   <project path="external/roboto-fonts" name="platform/external/roboto-fonts" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
@@ -219,16 +226,20 @@
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/sonic" name="platform/external/sonic" groups="pdk" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
-  <project path="external/speex" name="platform/external/speex" groups="pdk" />
+<!--  <project path="external/speex" name="platform/external/speex" groups="pdk" /> -->
+  <!-- Speex is an Open Source/Free Software patent-free audio compression format designed for speech. -->
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
+  <!-- squashfs management tools -->
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs,pdk-fs" />
+<!--   <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs,pdk-fs" /> -->
+  <!-- TTS engine -->
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs,pdk-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
+<!--  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" /> -->
+  <!-- a small library to interface with ALSA in the Linux kernel -->
   <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
@@ -238,7 +249,9 @@
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
   <project path="external/vboot_reference" name="platform/external/vboot_reference" groups="vboot" />
   <project path="external/vixl" name="platform/external/vixl" groups="pdk" />
+  <!-- AArch64 Runtime Code Generation Library -->
   <project path="external/vogar" name="platform/external/vogar" groups="pdk" />
+  <!-- Vogar is a command line tool that attempts to boost your productivity when developing Java programs. -->
   <project path="external/webp" name="platform/external/webp" groups="pdk,qcom_msm8x26" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
@@ -246,7 +259,8 @@
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
+<!--  <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" /> -->
+  <!-- ZXing ("zebra crossing") is an open-source, multi-format 1D/2D barcode image processing library  -->
   <project path="frameworks/av" name="android_frameworks_av" revision="android-6.0-lite" remote="yarang" />
   <project path="frameworks/base" name="android_frameworks_base" revision="android-6.0" remote="ARPi3" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
