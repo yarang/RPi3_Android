@@ -42,7 +42,7 @@
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
-  <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
+  <!-- <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" /> -->
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/android-mock" name="platform/external/android-mock" groups="pdk-cw-fs,pdk-fs" />
@@ -82,7 +82,7 @@
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs,pdk-fs" />
+  <!--<project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs,pdk-fs" /> -->
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eigen" name="platform/external/eigen" groups="pdk" />
   <project path="external/elfutils" name="platform/external/elfutils" groups="pdk" />
@@ -144,6 +144,7 @@
   <project path="external/libedit" name="platform/external/libedit" groups="pdk-fs" />
   <project path="external/libexif" name="platform/external/libexif" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
+  <!-- Development libraries for a GSM speech compressor -->
   <project path="external/libhevc" name="platform/external/libhevc" groups="pdk-fs" />
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
   <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" />
@@ -161,7 +162,9 @@
   <project path="external/libutf" name="platform/external/libutf" groups="pdk-cw-fs,pdk-fs" />
 <!--  <project path="external/libvncserver" name="platform/external/libvncserver" groups="pdk-cw-fs,pdk-fs" /> -->
   <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
+  <!-- library for web media format -->
   <project path="external/libvterm" name="platform/external/libvterm" groups="pdk-cw-fs,pdk-fs" />
+  <!-- An abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator. -->
   <project path="external/libxml2" name="platform/external/libxml2" groups="pdk-cw-fs,pdk-fs,libxml2" />
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs,pdk-fs" />
   <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" groups="pdk-cw-fs,pdk-fs" />
@@ -191,6 +194,7 @@
   <project path="external/neven" name="platform/external/neven" groups="pdk-cw-fs,pdk-fs" />
   <!-- face detector -->
   <project path="external/nfacct" name="platform/external/nfacct" groups="pdk-cw-fs,pdk-fs" />
+  <!-- nfacct - command line tool to create/retrieve/delete accounting objects -->
   <project path="external/nist-pkits" name="platform/external/nist-pkits" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/nist-sip" name="platform/external/nist-sip" groups="pdk-cw-fs,pdk-fs" /> 
   <!-- SIP library. (Do not need.) -->
